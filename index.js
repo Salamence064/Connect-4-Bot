@@ -75,6 +75,9 @@ client.on("messageCreate", (msg) => {
                 return;
             }
         }
+
+        msg.channel.send("That command is not recognized. Try using this on an existing command.");
+        return;
     }
 
     if (cmd === "flip") { // coin flip
